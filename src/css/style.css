@@ -1,0 +1,232 @@
+:root {
+  --color-orange: #e87d0e;
+  --color-white: #ffffff;
+  --color-blue: #39289f;
+  --color-blue2: #39289f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Body */
+body {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Navbar */
+nav {
+  /* border: solid #e87d0e; */
+  height: 15vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: row; */
+}
+
+.logo{
+  /* border: solid #e87d0e; */
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+.logo a{
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+
+/* Menu */
+ul {
+  /* border: solid #e87d0e; */
+  width: 50vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  /* border: solid red; */
+  display: flex;
+  /* flex-direction: row; */
+}
+
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/* Main */
+.main-home{
+  border: solid white;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: row;
+  background-image: url(../img/joy_stick.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.information{
+  border: solid pink;
+
+  width: 50vw;
+}
+
+.joy-stick{
+  border: solid peru;
+
+  width: 50%;
+  height: auto;
+}
+
+.logo-joy-stick {
+  border: solid yellow;
+  height: 80%;
+  display: flex;
+}
+
+.joy-stick img{
+  border: solid pink;
+  /* height: 50vh; */
+  /* width: 50vw; */
+}
+
+/* Mensagem da página de erro */
+.message-error{
+  text-align: center;
+  margin-top: 15vw;
+}
+/* Fontes que serão utilizadas*/
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900
+
+.rubik-<uniquifier> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* 
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*/
