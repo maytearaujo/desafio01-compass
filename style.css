@@ -11,12 +11,58 @@
   margin: 0;
 }
 
-html{
+body {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+nav {
+  /* border: solid #e87d0e; */
+  height: 15vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: row; */
+}
+
+.logo{
+  /* border: solid #e87d0e; */
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  /* border: solid #e87d0e; */
+  width: 50vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  /* border: solid red; */
+  display: flex;
+  /* flex-direction: row; */
+}
+
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+
+/* Mensagem da página de erro */
+.message-error{
+  text-align: center;
+  margin-top: 15vw;
+}
 /* Fontes que serão utilizadas*/
 
 /* .rubik-<uniquifier > {
