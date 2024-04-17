@@ -19,12 +19,19 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+
+  background-image: url(../img/joy_stick.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+  /* background-size: contain; */
+  /* background-attachment: local; */
 }
 
 /* Navbar */
 nav {
   /* border: solid #e87d0e; */
-  height: 15vh;
+  height: 10vh;
 
   display: flex;
   justify-content: space-between;
@@ -32,18 +39,17 @@ nav {
   /* flex-direction: row; */
 }
 
-.logo{
+.logo {
   /* border: solid #e87d0e; */
   width: 10vw;
   display: flex;
   justify-content: center;
 }
 
-.logo a{
+.logo a {
   font-size: 1.8rem;
   font-weight: 800;
 }
-
 
 /* Menu */
 ul {
@@ -66,47 +72,131 @@ a {
   text-decoration: none;
 }
 
-/* Main */
-.main-home{
+/*  Section */
+.main-section {
   border: solid white;
+
   width: 100%;
-  height: 80vh;
+  height: 85vh;
+
+  padding: 1rem 4rem;
+}
+
+/* Main */
+.main-home {
+  /* border: solid white; */
+
   display: flex;
   justify-content: row;
-  background-image: url(../img/joy_stick.png);
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
-.information{
-  border: solid pink;
+.information {
+  /* border: solid pink; */
 
-  width: 50vw;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-around;
+  /* padding-left: 4rem; */
 }
 
-.joy-stick{
-  border: solid peru;
+.information p:nth-child(1) {
+  color: var(--color-orange);
+  font-size: 20px;
+  font-weight: bold;
+}
 
-  width: 50%;
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.logo-games {
+  /* border: solid peru; */
+
+  width: 60vw;
   height: auto;
-}
 
-.logo-joy-stick {
-  border: solid yellow;
-  height: 80%;
   display: flex;
 }
 
-.joy-stick img{
-  border: solid pink;
+.btn {
+  background-color: var(--color-orange);
+  /* width: 30%; */
+  /* height: 20%; */
+}
+
+.btn-details {
+  border: none;
+  border-radius: 50px;
+  width: 180px;
+  height: 43px;
+
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+.logo-games div {
+  /* border: solid pink; */
   /* height: 50vh; */
-  /* width: 50vw; */
+  /* width: 30vw; */
+}
+
+.logo-games-1 {
+  /* border: solid pink; */
+  /* height: 50vh; */
+  width: 15vw;
+  display: flex;
+  align-items: center;
+}
+
+.logo-games-2 {
+  /* border: solid green; */
+  height: 40vh;
+  width: 30vw;
+
+  /* display: flex; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-games-2 img {
+  /* border: solid red; */
+  width: 5vw;
+}
+
+/* section games */
+.games {
+  border: solid green;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currently-trending {
+  display: flex;
+  justify-content: space-between;
+}
+
+.followers {
+  border: solid red;
+
+  width: 15vw;
+  display: flex;
+  justify-content: space-evenly;
+
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
 }
 
 /* Mensagem da página de erro */
-.message-error{
+.message-error {
   text-align: center;
   margin-top: 15vw;
+  padding-right: 30vw;
 }
 /* Fontes que serão utilizadas*/
 
