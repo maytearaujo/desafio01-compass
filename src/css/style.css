@@ -96,8 +96,11 @@ a {
 
   /* background-color: #199319; */
   color: white;
-  padding: 15px 15px;
+  padding: 8px 15px;
   text-decoration: none;
+
+  align-self: center;
+
 }
 
 /*  Section */
@@ -648,6 +651,7 @@ footer p:nth-last-child(1) {
   border-radius: 9px;
   background-color: #261e1b;
   border: solid 0.6px #cecece;
+  color: var(--color-white);
 }
 
 .form-say-hello input {
