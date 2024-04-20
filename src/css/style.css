@@ -478,7 +478,7 @@ h4 {
   width: 70%;
 }
 
-.btn-form-email {
+.btn-form {
   border-radius: 10px;
   width: 105px;
   height: 37px;
@@ -563,8 +563,34 @@ footer p:nth-last-child(1) {
 /* Contact Us */
 
 /* map */
+.map {
+  /* border: solid rgb(19, 139, 73); */
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.text-map {
+  /* border: solid saddlebrown; */
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mapa {
+  width: 65%;
+  /* border: solid red; */
+}
+
 .section-map-contacts {
   /* border: solid saddlebrown; */
+  width: 1188px;
+  height: 102px;
   display: flex;
   justify-content: space-around;
 }
@@ -580,7 +606,7 @@ footer p:nth-last-child(1) {
   justify-content: center;
   align-items: center;
 
-  position: relative;
+  /* position: relative; */
 }
 
 .section-map-contacts section {
@@ -593,6 +619,72 @@ footer p:nth-last-child(1) {
 
 .section-map-contacts section:nth-last-child(1) {
   width: 25%;
+}
+
+.say-hello {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1c140f;
+  background-image: url(../img/Vector\ 3.png);
+  background-repeat: no-repeat;
+}
+
+.form-say-hello {
+  width: 671px;
+  height: 741px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-say-hello {
+  color: #4f4f4f;
+}
+
+.form-say-hello textarea,
+.form-say-hello input {
+  border-radius: 9px;
+  background-color: #261e1b;
+  border: solid 0.6px #cecece;
+}
+
+.form-say-hello input {
+  width: 671px;
+  height: 40px;
+  /* border: solid red; */
+}
+
+.form-say-hello input:nth-child(2),
+.form-say-hello input:nth-child(4) {
+  /* border: solid red; */
+  width: auto;
+}
+
+.form-say-hello fieldset {
+  /* border: solid red; */
+
+  height: 87px;
+  width: 49%;
+
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.full-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-say-hello button {
+  justify-content: end;
+  align-items: center;
+  margin-left: auto;
 }
 
 .stay-in-loop-contact {
