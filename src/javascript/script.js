@@ -39,27 +39,23 @@ formContactUs.addEventListener("submit", (e) => {
   let firstName = document.getElementById("firstName").value;
   let lastName = document.getElementById("lastName").value;
   let emailAddress = document.getElementById("emailAddress").value;
-  let message = document.getElementById("message").value;
+  let textAreaMessage = document.getElementById("textAreaMessage").value;
 
   if (firstName == "") {
     document.getElementById("verificarCampos").innerHTML =
       "Please, check the first name";
-    // alert("Nome")
   } else if (lastName === "") {
     document.getElementById("verificarCampos").innerHTML = "";
     document.getElementById("verificarCampos").innerHTML =
       "Please, check the last name";
-    //   alert("Sobrenome")
   } else if (emailAddress === "" || emailRegex.test(emailAddress) == false) {
     document.getElementById("verificarCampos").innerHTML = "";
     document.getElementById("verificarCampos").innerHTML =
       "Please, check the e-mail";
-    // alert("email")
-  } else if (message === "") {
+  } else if (textAreaMessage === "") {
     document.getElementById("verificarCampos").innerHTML = "";
-    document.getElementById("verificarEmail").innerHTML =
+    document.getElementById("verificarCampos").innerHTML =
       "Please, check the message";
-    //   alert("mensagem")
   } else {
     document.getElementById("verificarCampos").innerHTML = "";
     let usuarios = new Array();
@@ -68,7 +64,7 @@ formContactUs.addEventListener("submit", (e) => {
       usuarios = JSON.parse(localStorage.getItem("usuarios"));
     }
 
-    usuarios.push({ firstName, lastName, emailAddress, message });
+    usuarios.push({ firstName, lastName, emailAddress, textAreaMessage });
 
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
@@ -77,6 +73,6 @@ formContactUs.addEventListener("submit", (e) => {
     document.getElementById("firstName").value = "";
     document.getElementById("lastName").value = "";
     document.getElementById("emailAddress").value = "";
-    document.getElementById("message").value = "";
+    document.getElementById("textAreaMessage").value = "";
   }
 });

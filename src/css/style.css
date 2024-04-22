@@ -77,6 +77,33 @@ a {
   text-decoration: none;
 }
 
+.home:hover {
+  /* border: solid pink; */
+}
+
+li:nth-child(1){
+  display: flex;
+  flex-direction: column;
+}
+li:nth-child(1) img{
+  /* border: solid red; */
+  display: none;
+}
+
+li:hover img{
+  /* border: solid green; */
+  /* visibility: hidden; */
+  display: flex;
+  flex-direction: column;
+}
+
+li:nth-child(1):hover{
+  /* border: solid red; */
+  /* display: flex; */
+  /* visibility:collapse; */
+  display: flex;
+}
+
 .btn {
   /* background-color: var(--color-orange); */
   border: none;
