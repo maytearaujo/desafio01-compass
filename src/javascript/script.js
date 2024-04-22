@@ -1,3 +1,31 @@
+// Salvando informações no local storage subscribe
+let formSubscribe = document.getElementById("form-subscribe");
+
+
+// formContactUs.addEventListener("submit", (e) => {
+formSubscribe.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let emailSubscribe = document.getElementById("emailSubscribe").value;
+
+    let emails = new Array();
+
+    if (localStorage.hasOwnProperty("emails")){
+        emails = JSON.parse(localStorage.getItem('emails'));
+    }
+
+    emails.push({emailSubscribe, emailSubscribe})
+
+    localStorage.setItem("emails", JSON.stringify(emails));
+    
+    alert ("Thank you for subscribing.");
+    
+    document.getElementById('emailSubscribe').value='';
+
+})
+
+
+// Salvando informações no local storage Form Contact Us
 let formContactUs = document.getElementById("contact-us");
 
 formContactUs.addEventListener("submit", (e) => {
